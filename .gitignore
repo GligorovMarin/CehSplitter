@@ -1,0 +1,25 @@
+# --- .NET build output ---
+bin/
+obj/
+*.user
+.vs/
+
+# --- Node / React build output ---
+node_modules/
+dist/
+coverage/
+
+# --- Secrets and local configuration ---
+# Real values never go into Git. Commit a .env.example with placeholder values instead.
+.env
+.env.*
+!.env.example
+appsettings.Development.local.json
+
+# --- Local database data (if a Docker volume is ever mapped to a folder) ---
+pgdata/
+
+# --- OS and editor files ---
+.DS_Store
+.idea/
+*.swp
